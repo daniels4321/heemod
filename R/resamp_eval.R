@@ -57,7 +57,8 @@ run_probabilistic <- function(model, resample, N) {
   structure(
     res, 
     class = c("probabilistic", class(res)),
-    model = model
+    model = model,
+    var_names = names(newdata)
   )
 }
 
